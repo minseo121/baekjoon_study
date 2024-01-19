@@ -8,5 +8,6 @@ public class ThousandEight {
 		double b = sc.nextDouble();
 		double result = a / b;
 		System.out.print(result);
+		//여기도 변화
 	}
 }

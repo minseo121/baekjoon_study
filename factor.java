@@ -13,5 +13,6 @@ public class factor { //제출할때에는... Main으로 해야한단다...
             if(b < min) min = b;
         }
         System.out.print(max*min);
+        //여기도 변화 
     }
 }

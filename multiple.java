@@ -16,6 +16,7 @@ public class multiple {
             int sum2 = B/max;
             System.out.print(sum1 * sum2 * max);
             System.out.print("\n");
+            //자자 푸쉬해볼게 
         }
     }
 }

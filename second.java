@@ -5,5 +5,7 @@ public class second {
         Scanner sc = new Scanner(System.in);
         int year = sc.nextInt();
         System.out.print(year-543);
+
+        //여기도 변화
     }
 }
