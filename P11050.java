@@ -18,5 +18,4 @@ public class P11050 {
         }
         System.out.println(d[n][k]);
     }
-}/'''''['
-410']'
+}
