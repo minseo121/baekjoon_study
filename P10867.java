@@ -12,9 +12,10 @@ public class P10867 {
         PrintWriter pw = new PrintWriter(System.out);
 
         int n = Integer.parseInt(br.readLine());
+        String[] input = br.readLine().split("\\s+");
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(br.readLine());
+            arr[i] = Integer.parseInt(input[i]);
         }
 
         temp = new int[arr.length];
@@ -33,16 +34,13 @@ public class P10867 {
     }
 
     public static void mergeSort(int[] arr, int low, int high) {
-        if (high - low < 1) {
-            return;
+        if (low < high) {
+            int mid = low + (high - low) / 2;
+            mergeSort(arr, low, mid);
+            mergeSort(arr, mid + 1, high);
+            merge(arr, low, mid, high);
         }
-
-        int mid = (low + high) / 2;
-        mergeSort(arr, low, mid);
-        mergeSort(arr, mid + 1, high);
-        merge(arr, low, mid, high);
     }
-
     private static void merge(int[] arr, int low, int mid, int high) {
         int t = 0, l = low, h = mid + 1;
 
@@ -69,7 +67,7 @@ public class P10867 {
         if (arr.length == 0 || arr.length == 1) {
             return arr.length;
         }
-
+    
         int j = 0;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] != arr[i + 1]) {
@@ -77,7 +75,7 @@ public class P10867 {
             }
         }
         arr[j++] = arr[arr.length - 1];
-
+    
         return j;
     }
 }
