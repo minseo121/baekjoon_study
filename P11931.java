@@ -14,7 +14,6 @@ public class P11931 {
             data[i] = sc.nextInt();
         }
 
-        // 최댓값과 최솟값 찾기
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < n; i++) {
@@ -22,15 +21,12 @@ public class P11931 {
             if (data[i] < min) min = data[i];
         }
 
-        // 카운트 배열 생성
         int[] cnt = new int[max - min + 1];
 
-        // 데이터 카운팅
         for (int i = 0; i < n; i++) {
             cnt[data[i] - min]++;
         }
 
-        // 정렬된 결과를 배열에 저장
         int[] sorted = new int[n];
         int idx = 0;
         for (int i = cnt.length - 1; i >= 0; i--) {
@@ -40,7 +36,6 @@ public class P11931 {
             }
         }
 
-        // 정렬된 결과 출력
         for (int i = 0; i < sorted.length; i++) {
             bw.write(sorted[i] + "\n");
         }
