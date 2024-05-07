@@ -52,7 +52,7 @@ public class P15500f {
 				}
 			}
 		}
-		System.out.println(cnt);dfdf
+		System.out.println(cnt)dfdf
 		System.out.println(sb.toString());
 	}
 }
