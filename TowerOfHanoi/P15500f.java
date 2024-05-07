@@ -44,7 +44,7 @@ public class P15500f {
 						cnt++;
 						targetNum--;
 						break;
-					} else {asasa
+					} else {
 						sb.append("2 1\n");
 						cnt++;
 						First.add(now);
@@ -52,7 +52,7 @@ public class P15500f {
 				}
 			}
 		}
-		System.out.println(cnt);dfdf
+		System.out.println(cnt);
 		System.out.println(sb.toString());
 	}
 }
