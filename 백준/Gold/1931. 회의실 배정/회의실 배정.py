@@ -8,7 +8,8 @@ start = 0
 result = 0
 
 for _ in range(n):
-    time.append(list(map(int, input().rstrip().split())))
+    a,b = (map(int, input().rstrip().split()))
+    time.append((a,b))
 
 time.sort(key=lambda x: (x[1], x[0]))
 
