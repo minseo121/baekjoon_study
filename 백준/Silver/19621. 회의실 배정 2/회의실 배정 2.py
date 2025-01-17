@@ -8,8 +8,6 @@ for _ in range(n):
     a, b, c = map(int, input().rstrip().split())
     meeting.append((a,b,c))
 
-meeting.sort()
-
 dp = [0]*n
 dp[0] = meeting[0][2]
 for i in range(1, n):
