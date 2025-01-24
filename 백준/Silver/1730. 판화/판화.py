@@ -1,8 +1,6 @@
 N = int(input())
 order = input()
 board = [["."]*N for _ in range(N)]
-# print(board)
-# print(order)
 
 x = 0
 y = 0
