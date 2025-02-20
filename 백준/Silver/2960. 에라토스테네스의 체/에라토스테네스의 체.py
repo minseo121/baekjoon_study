@@ -7,7 +7,7 @@ result = 0
 sosu = [True] * (n+1)
 for i in range(2, n+1):
     for j in range(i, n+1, i):
-        if sosu[j] != False:
+        if sosu[j]:
             sosu[j] = False
             result += 1
             if result == k:
