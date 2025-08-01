@@ -4,11 +4,14 @@ input = sys.stdin.readline
 t = int(input().strip())
 for _ in range(t):
     n, m, k, d = map(int, input().rsplit())
-
-    B = d // (k*(m*(m-1))+m*m)
+    
+    num = n*m*((m-1)*k+(n-1)*m)//2
+    B = d // num
     A = k*B
-    result = A*((m-1)*m)+B*(m*m)
-    if B == 0:
+
+    if B <= 0:
         result = -1
+    else:
+        result = num*B
 
     print(result)
